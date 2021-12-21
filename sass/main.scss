@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 $main-font: "Source Sans Pro", sans-serif;
-$main-color: #0a3d62;
+$main-color: #0d4b17;
 $font-light: white;
 $font-dark: grey;
+$background-color: rgb(116, 116, 116);
 
 *,
 *::before,
@@ -10,4 +11,33 @@ $font-dark: grey;
 	box-sizing: border-box;
 	font-family: $main-font;
 }
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $background-color;
+}
 
+.menu {
+	background-color: $main-color;
+	margin: 0;
+	padding: 0 3rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: $font-light;
+	display: flex;
+	flex-direction: row;
+}
+.menu__link {
+	text-decoration: none;
+	color: $font-light;
+}
+
+li {
+	list-style-type: none;
+}
+li a {
+	text-decoration: none;
+	color: $font-light;
+}
