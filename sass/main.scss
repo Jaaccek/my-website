@@ -34,10 +34,10 @@ body {
 	color: $font-light;
 }
 
-li {
+.menu__listItem {
 	list-style-type: none;
 }
-li a {
+.menu__dropdown--link {
 	text-decoration: none;
 	color: $font-light;
 }
