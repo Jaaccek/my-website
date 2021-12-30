@@ -16,7 +16,7 @@ body {
 .menu {
   background-color: #0d4b17;
   margin: 0;
-  padding: 0 3rem;
+  padding: 0 0;
   width: 100%;
   position: fixed;
   top: 0;
@@ -36,11 +36,11 @@ body {
   color: white;
 }
 
-li {
+.menu__listItem {
   list-style-type: none;
 }
 
-li a {
+.menu__dropdown--link {
   text-decoration: none;
   color: white;
 }

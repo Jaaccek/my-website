@@ -1,17 +1,25 @@
 {
-	"name": "my-website",
-	"version": "1.0.0",
-	"description": "style",
-	"main": "index.js",
-	"dependencies": {
-		"sass": "^1.45.0",
-		"scss": "^0.2.4"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"style": "node-sass --watch sass/main.scss css/main.css"
-	},
-	"author": "",
-	"license": "ISC"
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "style",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.45.1",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node-sass --watch sass/main.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaaccek/my-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaaccek/my-website/issues"
+  },
+  "homepage": "https://github.com/Jaaccek/my-website#readme"
 }

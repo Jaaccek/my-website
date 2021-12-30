@@ -20,7 +20,7 @@ body {
 .menu {
 	background-color: $main-color;
 	margin: 0;
-	padding: 0 3rem;
+	padding: 0 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -28,6 +28,7 @@ body {
 	color: $font-light;
 	display: flex;
 	flex-direction: row;
+	
 }
 .menu__link {
 	text-decoration: none;
