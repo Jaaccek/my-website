@@ -4,7 +4,6 @@ $main-color: #08a021;
 $font-light: white;
 $font-dark: grey;
 $hover-color:rgb(1, 78, 1); 
-
 $background-color: rgb(116, 116, 116);
 
 *,
@@ -13,15 +12,18 @@ $background-color: rgb(116, 116, 116);
 	box-sizing: border-box;
 	font-family: $main-font;
 }
+
 body {
 	margin: 0;
 	padding: 0;
 	background-color: $background-color;
 }
+
 .navigation__logo {
 	width: 100px;
 	height: 60px;
 	position: fixed;
+	border-radius: 5%;
 }
 
 .navigation__list {
@@ -39,27 +41,48 @@ body {
 .navigation__link {
 	padding: 0 30px;
 	list-style-type: none;
+	display: flex;
+	position: relative;
 }
 
 .navigation__category {
 	color: $font-light;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
-.navigation__category:hover {
+.navigation__link:hover {
 	color: $hover-color;
-	padding: 20px 0 20px;
 	background-color: #0bca2b;
+	border-radius: 5%;
+	align-items: center;
+	height: 100%;
 }
 
-.sub-navigation__list {
+.navigation__subnav {
 	list-style-type: none;
 	display: none;
-}
-.sub-navigation__list:hover{
-	display: block;
+	background-color:#0bca2b;
+	padding-top: 100px;
+	align-items: center; 
 }
 
-.sub-navigation__link {
-	text-decoration: none;	
+.navigation__link:hover .navigation__subnav {
+	display: block;
+	top: 40px;
+}
+
+.navigation__subnav-item {
+	padding: 10px 20px;
+}
+
+.navigation__subnav-link {
+	text-decoration: none;
+	color: $font-light;
+}
+
+.navigation__subnav-link:hover {
+	background-color: $main-color;
+	color: $hover-color;
 }
