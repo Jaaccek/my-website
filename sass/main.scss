@@ -105,11 +105,10 @@ body {
 .navigation__subnav-link {
 	text-decoration: none;
 	color: $font-light;
-	width: 100%
+	margin-right: 12px;
+	padding: 10px;
 }
 
 .navigation__subnav-link:hover {
 	background-color: #0bca2b;
-	color: $hover-color;
-	;
 }

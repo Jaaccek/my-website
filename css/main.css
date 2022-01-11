@@ -83,8 +83,8 @@ body {
 .navigation__subnav-link {
   text-decoration: none;
   color: white;
-  width: 100%; }
+  margin-right: 12px;
+  padding: 10px; }
 
 .navigation__subnav-link:hover {
-  background-color: #0bca2b;
-  color: #014e01; }
+  background-color: #0bca2b; }
