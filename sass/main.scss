@@ -52,7 +52,8 @@ body {
 	align-items: center;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:focus-within {
 	color: $hover-color;
 	background-color: #0bca2b;
 	border-radius: 5%;
@@ -60,17 +61,41 @@ body {
 	height: 100%;
 }
 
-.navigation__subnav {
-	list-style-type: none;
+.navigation__link:focus-within .navigation__category {
+	outline: none;
+}
+
+.navigation__list .navigation__link .navigation__subnav{
+	background: $main-color;
+ 	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
 	display: none;
-	background-color:#0bca2b;
-	padding-top: 100px;
-	align-items: center; 
+}
+
+.navigation__list .navigation__link:hover > .navigation__subnav,
+
+.navigation__list .navigation__link:focus-within > .navigation__subnav,
+
+.navigation__list .navigation__link .navigation__subnav:hover,
+
+.navigation__list .navigation__link .navigation__subnav:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+	border-radius: 3%;
+	list-style-type: none;
+	justify-content: left;
+	text-align: left;
 }
 
 .navigation__link:hover .navigation__subnav {
 	display: block;
-	top: 40px;
+	top: 44px;
 }
 
 .navigation__subnav-item {
@@ -80,9 +105,11 @@ body {
 .navigation__subnav-link {
 	text-decoration: none;
 	color: $font-light;
+	width: 100%
 }
 
 .navigation__subnav-link:hover {
-	background-color: $main-color;
+	background-color: #0bca2b;
 	color: $hover-color;
+	;
 }
