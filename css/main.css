@@ -89,6 +89,10 @@ body {
 .navigation__subnav-link:hover {
   background-color: #0bca2b; }
 
-.main__background-img {
-  width: 100%;
-  position: absolute; }
+.main__splash {
+  height: 100vh;
+  background-image: url("/img/background-stadium.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: static; }
