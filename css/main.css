@@ -3,21 +3,31 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0; }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #747474; }
 
+figure {
+  padding: 0; }
+
 .navigation__logo {
   width: 100px;
   height: 60px;
   position: fixed;
-  border-radius: 5%; }
+  border-radius: 5%;
+  padding: 0;
+  margin-left: 30px;
+  top: 0; }
+
+.navigation {
+  background-color: #08a021; }
 
 .navigation__list {
-  background-color: #08a021;
   margin: 0 30px;
   padding: 0 100px;
   width: 100%;
@@ -50,7 +60,7 @@ body {
 .navigation__link:focus-within .navigation__category {
   outline: none; }
 
-.navigation__list .navigation__link .navigation__subnav {
+.navigation__subnav {
   background: #08a021;
   visibility: hidden;
   opacity: 0;
@@ -58,33 +68,35 @@ body {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
-  left: 0;
+  padding: 0;
   display: none; }
 
-.navigation__list .navigation__link:hover > .navigation__subnav,
-.navigation__list .navigation__link:focus-within > .navigation__subnav,
-.navigation__list .navigation__link .navigation__subnav:hover,
-.navigation__list .navigation__link .navigation__subnav:focus {
+.navigation__link:hover > ul,
+.navigation__link:focus-within > ul,
+.navigation__subnav:hover,
+.navigation__subnav:focus {
   visibility: visible;
   opacity: 1;
   display: block;
   border-radius: 3%;
   list-style-type: none;
-  justify-content: left;
-  text-align: left; }
+  background-color: green; }
 
 .navigation__link:hover .navigation__subnav {
   display: block;
   top: 44px; }
 
 .navigation__subnav-item {
-  padding: 10px 20px; }
+  padding: 0;
+  margin: 0; }
 
 .navigation__subnav-link {
   text-decoration: none;
   color: white;
   margin-right: 12px;
-  padding: 10px; }
+  padding: 20px;
+  display: block;
+  margin: 0; }
 
 .navigation__subnav-link:hover {
   background-color: #0bca2b; }

@@ -11,6 +11,8 @@ $background-color: rgb(116, 116, 116);
 *::after {
 	box-sizing: border-box;
 	font-family: $main-font;
+	padding: 0;
+	margin:0;
 }
 
 body {
@@ -19,15 +21,24 @@ body {
 	background-color: $background-color;
 }
 
+figure {
+	padding: 0;
+}
 .navigation__logo {
 	width: 100px;
 	height: 60px;
 	position: fixed;
 	border-radius: 5%;
+	padding: 0;
+	margin-left: 30px;
+	top: 0;
+}
+.navigation {
+	background-color: $main-color;
 }
 
 .navigation__list {
-	background-color: $main-color;
+	
 	margin: 0 30px;
 	padding: 0 100px;
 	width: 100%;
@@ -65,7 +76,7 @@ body {
 	outline: none;
 }
 
-.navigation__list .navigation__link .navigation__subnav{
+.navigation__subnav {
 	background: $main-color;
  	visibility: hidden;
 	opacity: 0;
@@ -73,24 +84,23 @@ body {
 	position: absolute;
 	transition: all 0.5s ease;
 	margin-top: 1rem;
-	left: 0;
+	padding: 0;
 	display: none;
 }
 
-.navigation__list .navigation__link:hover > .navigation__subnav,
+.navigation__link:hover > ul,
 
-.navigation__list .navigation__link:focus-within > .navigation__subnav,
+.navigation__link:focus-within > ul,
 
-.navigation__list .navigation__link .navigation__subnav:hover,
+.navigation__subnav:hover,
 
-.navigation__list .navigation__link .navigation__subnav:focus {
+.navigation__subnav:focus {
 	visibility: visible;
 	opacity: 1;
 	display: block;
 	border-radius: 3%;
 	list-style-type: none;
-	justify-content: left;
-	text-align: left;
+	background-color: green;
 }
 
 .navigation__link:hover .navigation__subnav {
@@ -99,7 +109,8 @@ body {
 }
 
 .navigation__subnav-item {
-	padding: 10px 20px;
+	padding: 0;
+	margin: 0;
 
 }
 
@@ -107,7 +118,9 @@ body {
 	text-decoration: none;
 	color: $font-light;
 	margin-right: 12px;
-	padding: 10px;
+	padding: 20px;
+	display: block;
+	margin: 0;
 }
 
 .navigation__subnav-link:hover {
