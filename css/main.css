@@ -107,7 +107,7 @@ figure {
   background-position: center;
   position: fixed; }
 
-.main__splash-header {
+.main__header {
   text-align: center;
   color: white;
   font-size: 50px; }
@@ -122,8 +122,9 @@ h1 {
 .main__slider {
   width: 130px;
   height: 100px;
-  align-items: flex-end;
   position: fixed;
   color: white;
   text-align: center;
-  text-shadow: 6px 5px 6px #070707; }
+  text-shadow: 6px 5px 6px #070707;
+  justify-content: flex-end;
+  display: inline-block; }
