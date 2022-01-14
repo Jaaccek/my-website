@@ -33,12 +33,12 @@ figure {
 	margin-left: 30px;
 	top: 0;
 }
+
 .navigation {
 	background-color: $main-color;
 }
 
 .navigation__list {
-	
 	margin: 0 30px;
 	padding: 0 100px;
 	width: 100%;
@@ -64,6 +64,7 @@ figure {
 }
 
 .navigation__link:hover,
+
 .navigation__link:focus-within {
 	color: $hover-color;
 	background-color: #0bca2b;
@@ -111,7 +112,6 @@ figure {
 .navigation__subnav-item {
 	padding: 0;
 	margin: 0;
-
 }
 
 .navigation__subnav-link {
@@ -125,20 +125,35 @@ figure {
 
 .navigation__subnav-link:hover {
 	background-color: #0bca2b;
-	
 }
-.main__splash {
-height: 100vh;
-background-image: url("/img/background-stadium.jpg");
-background-position: center center;
-background-size: cover;
-background-attachment: fixed;
-position: static;
+
+.main__img {
+	height: 800px;
+	width: 100%;
+	background-position: center;
+	position: fixed;	
 }
 
 .main__splash-header {
 	text-align: center;
-	padding-top: 50px;
 	color: $font-light;
 	font-size: 50px;
+}
+
+h1 {
+	background-color: black;
+	opacity: 80%;
+	box-shadow: 10px 10px 5px black;
+	position: relative;
+	padding-top: 150px;
+}
+
+.main__slider {
+	width: 130px;
+	height: 100px;
+	align-items: flex-end;
+	position: fixed;
+	color: $font-light;
+	text-align: center;
+	text-shadow: 6px 5px 6px rgb(7, 7, 7);
 }

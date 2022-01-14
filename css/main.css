@@ -101,16 +101,29 @@ figure {
 .navigation__subnav-link:hover {
   background-color: #0bca2b; }
 
-.main__splash {
-  height: 100vh;
-  background-image: url("/img/background-stadium.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: static; }
+.main__img {
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  position: fixed; }
 
 .main__splash-header {
   text-align: center;
-  padding-top: 50px;
   color: white;
   font-size: 50px; }
+
+h1 {
+  background-color: black;
+  opacity: 80%;
+  box-shadow: 10px 10px 5px black;
+  position: relative;
+  padding-top: 150px; }
+
+.main__slider {
+  width: 130px;
+  height: 100px;
+  align-items: flex-end;
+  position: fixed;
+  color: white;
+  text-align: center;
+  text-shadow: 6px 5px 6px #070707; }
