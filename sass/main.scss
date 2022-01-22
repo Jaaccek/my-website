@@ -18,9 +18,6 @@ body {
 	background-color: $background-color;
 }
 
-figure {
-	padding: 0;
-}
 .navigation__logo {
 	width: 100px;
 	height: 60px;
@@ -74,10 +71,6 @@ figure {
 	height: 100%;
 }
 
-.navigation__link:focus-within .navigation__category {
-	outline: none;
-}
-
 .navigation__subnav {
 	background: $main-color;
  	visibility: hidden;
@@ -125,10 +118,10 @@ figure {
 	background-color: #0bca2b;
 }
 
-.main__img {
-	height: 800px;
-	width: 100%;
-	background-position: center;
+.main__splash {
+	padding: 0;
+	margin: 0;
+	z-index: -1;
 	position: relative;
 }
 
@@ -139,18 +132,23 @@ figure {
 	background-color: black;
 	opacity: 80%;
 	box-shadow: 10px 10px 5px black;
-	z-index: 1;
+	z-index: 3;
 	position: relative;
 	display: block;
 	align-items: center;
+	margin: 0;
+	padding:0;
+	top: 350px;
 }
 
-.main__slider {
-	width: 130px;
-	height: 100px;
-	color: $font-light;
-	text-align: center;
-	text-shadow: 6px 5px 6px rgb(7, 7, 7);
-	justify-content: flex-end;
-	
+.main__img {
+	height: 1000px;
+	width: 100%;
+	background-position: center;
+	position: relative;
+}
+
+.footer {
+	background-color: $main-color;
+	height: 60px;
 }
