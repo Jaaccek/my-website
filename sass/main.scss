@@ -7,20 +7,16 @@ $main-font: "Source Sans Pro", sans-serif;
 *::before,
 *::after {
 	box-sizing: border-box;
-	font-family: $main-font;
 	padding: 0;
 	margin:0;
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	background-color: $background-color;
 }
 
 .navigation__logo {
 	width: 100px;
-
 	position: fixed;
 	border-radius: 5%;
 	padding: 0;
@@ -34,6 +30,7 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+	font-family: $main-font;
 }
 
 .navigation__list {
@@ -51,6 +48,8 @@ body {
 	list-style-type: none;
 	display: flex;
 	position: relative;
+	padding: 20px;
+	margin-left: 10px;
 }
 
 .navigation__category {
@@ -67,7 +66,7 @@ body {
 	background-color: #0bca2b;
 	border-radius: 5%;
 	align-items: center;
-
+	
 }
 
 .navigation__subnav {
@@ -80,6 +79,7 @@ body {
 	margin-top: 1rem;
 	padding: 0;
 	display: none;
+	font-family: $main-font;
 }
 
 .navigation__link:hover > ul,
@@ -138,6 +138,7 @@ body {
 	margin: 0;
 	padding:0;
 	top: 350px;
+	font-family: $main-font;
 }
 
 .main__img {
@@ -160,13 +161,22 @@ body {
 	width: 100%;
 	color: $font-light;
 	text-align: center;
+	display: inline-block;
+	align-items: center;
+	text-decoration: none;
+	list-style-type: none;
 }
 
 .end-page__link {
 	display: inline-block;
 	margin: 0 30px;
-	text-decoration: none;
-	font-family: $main-font;
+	
 	font-size: 16px;
-	list-style-type: none;
+}
+i {
+	text-decoration: none;
+	font-size: 50px;
+	position: absolute;
+	align-items: center;
+	margin: 0 30px;
 }
