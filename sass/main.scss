@@ -164,17 +164,6 @@ body {
 	font-size: 16px;
 }
 
-.fab {
-	font-size: 60px;
-    border: 60px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 20px;
-	color:white;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;  
-}
 .end-page__container {
 	align-items: center;
 	position: relative;
@@ -234,4 +223,72 @@ textarea {
 
 .end-page__button:hover {
 	background: #0bca2b;
+}
+
+.end-page__contact-body {
+	display: block;
+	padding: 15px;
+	background-color: $main-color;
+	
+
+}
+
+.end-page__contact-title {
+	text-align: center;
+	font-family: $main-font;
+	font-size: 18px;
+	margin: 15px;
+	font-weight: 500;
+}
+
+.end-page__contact-mobile {
+	text-align: center;
+	font-weight: 500;
+}
+
+.end-page__contact-text {
+	text-align: center;
+	font-family: $main-font;
+	font-size: 18px;
+	margin: 15px;
+	font-weight: 500;
+	transition: all 0.3;
+}
+
+.end-page__contact-link {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+
+.fab {
+	font-size: 60px;
+    border: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+	color:white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.end-page__short-list {
+	display: flex;
+	flex-direction: row-reverse;
+	
+}
+
+.end-page__last-item  {
+	padding: 15px;
+	list-style-type: none;
+}
+
+.end-page__a-link {
+	text-decoration: none;
+	font-family: $main-font;
+	font-size: 14px;
+	color: white;
 }
