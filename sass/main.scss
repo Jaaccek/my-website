@@ -66,7 +66,6 @@ body {
 	background-color: #0bca2b;
 	border-radius: 5%;
 	align-items: center;
-	
 }
 
 .navigation__subnav {
@@ -149,7 +148,7 @@ body {
 }
 
 .end-page {
-	background-color: $main-color;
+	background-color: $background-color;
 	height: 80px;
 	top: -45px;
 	z-index: 5;
@@ -170,13 +169,67 @@ body {
 .end-page__link {
 	display: inline-block;
 	margin: 0 30px;
-	
 	font-size: 16px;
 }
-i {
+
+.fab {
 	text-decoration: none;
 	font-size: 50px;
 	position: absolute;
 	align-items: center;
-	margin: 0 30px;
+	color: $font-light;
+}
+
+.end-page__form {
+	background-color: $main-color;
+	max-width: 420px;
+	margin: 15px;
+	
+}
+
+.end-page__input {
+	color: white;
+	font-family: $main-font;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 5%;
+	line-height: 20px;
+	background-color: transparent;
+	border: 2px solid white;
+	transition: all 0.3s;
+	width: 100%;
+	margin: 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.end-page__input:focus {
+	border: 2px solid white;
+	color: white;
+}
+
+textarea {
+	height: 150px;
+	line-height: 150%;
+	color: white;
+}
+
+.end-page__button {
+	width: 100%;
+	background:green;
+	border-radius:5px;
+	border:0;
+	cursor:pointer;
+	color:white;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+}
+
+.end-page__button:hover {
+	background: #0bca2b;
 }
