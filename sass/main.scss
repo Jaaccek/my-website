@@ -21,8 +21,8 @@ body {
 	border-radius: 5%;
 	padding: 0;
 	margin-left: 30px;
-	top: 0;
 	z-index: 2;
+	top: 15px;
 }
 
 .navigation {
@@ -63,7 +63,7 @@ body {
 
 .navigation__link:focus-within {
 	color: $hover-color;
-	background-color: #0bca2b;
+	background-color: #89E093;
 	border-radius: 5%;
 	align-items: center;
 }
@@ -90,7 +90,7 @@ body {
 	display: block;
 	border-radius: 3%;
 	list-style-type: none;
-	background-color: green;
+	background-color: #4BDE5D;
 }
 
 .navigation__link:hover .navigation__subnav {
@@ -113,7 +113,7 @@ body {
 }
 
 .navigation__subnav-link:hover {
-	background-color: #0bca2b;
+	background-color: #0E961E;
 }
 
 .main__splash {
@@ -147,148 +147,68 @@ body {
 	top: -42px;
 }
 
-.end-page__list {
-	padding: 0;
+.range-slider {
+	-webkit-appearance: none;
+	// background: #000;
+	// height: 200px;
 	width: 100%;
-	color: $font-light;
-	text-align: center;
-	display: inline-block;
-	align-items: center;
-	text-decoration: none;
-	list-style-type: none;
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		background: $main-color;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		transform: translate(0,-7px);
+	}
+	&::-webkit-slider-runnable-track {
+		background-color: blue;
+		height: 5px;
+	}
 }
 
-.end-page__link {
-	display: inline-block;
-	margin: 0 30px;
-	font-size: 16px;
-}
-
-.end-page__container {
-	align-items: center;
+footer {
+	width: 100%;
 	position: relative;
-}
-.end-page__form {
-	background-color: $main-color;
-	margin: 50px auto;
-	max-width: 420px;
-	display: flex;
-	flex-direction: column;
-	color: white;
-}
-
-.end-page__input {
-	color: white;
-	font-family: $main-font;
-	font-weight: 500;
-	font-size: 18px;
-	border-radius: 5%;
-	line-height: 20px;
-	background-color: transparent;
-	border: 2px solid white;
-	transition: all 0.3s;
-	width: 100%;
-	margin: 15px;
-	padding: 15px;
-	box-sizing: border-box;
-	outline: 0;
-}
-
-.end-page__input:focus {
-	border: 2px solid white;
-	color: white;
-}
-
-textarea {
-	height: 150px;
-	line-height: 150%;
-	color: white;
-	resize: vertical;
-}
-
-.end-page__button {
-	width: 100%;
-	background:green;
-	border-radius:5px;
-	border:0;
-	cursor:pointer;
-	color:white;
-	font-size:24px;
-	padding-top:10px;
-	padding-bottom:10px;
-	transition: all 0.3s;
-	margin-top:-4px;
-	font-weight:700;
-}
-
-.end-page__button:hover {
-	background: #0bca2b;
-}
-
-.end-page__contact-body {
-	display: block;
-	padding: 15px;
-	background-color: $main-color;
-	
-
-}
-
-.end-page__contact-title {
-	text-align: center;
-	font-family: $main-font;
-	font-size: 18px;
-	margin: 15px;
-	font-weight: 500;
-}
-
-.end-page__contact-mobile {
-	text-align: center;
-	font-weight: 500;
-}
-
-.end-page__contact-text {
-	text-align: center;
-	font-family: $main-font;
-	font-size: 18px;
-	margin: 15px;
-	font-weight: 500;
-	transition: all 0.3;
-}
-
-.end-page__contact-link {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	font-size: 25px;
-}
-
-.fab {
-	font-size: 60px;
-    border: 60px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 20px;
-	color:white;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;  
-}
-
-.end-page__short-list {
-	display: flex;
-	flex-direction: row-reverse;
-	
-}
-
-.end-page__last-item  {
-	padding: 15px;
-	list-style-type: none;
-}
-
-.end-page__a-link {
-	text-decoration: none;
-	font-family: $main-font;
+	bottom: 0;
+	background: linear-gradient(to right, #780B2B, #0E961E);
+	color: #fff;
+	padding: 100px 0 30px;
+	border-top-left-radius: 125px;
 	font-size: 14px;
-	color: white;
+	line-height: 20px;
+	font-family: $main-font;
 }
+
+.footer__logo {
+	width: 150px;
+	margin-bottom: 15px;
+}
+
+.footer__row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.footer__col {
+	flex-basis: 25%;
+	padding: 10px;
+}
+
+.range-wrapper {
+	width: 600px;
+}
+
+.range-scale {
+	display: flex;
+	justify-content: space-between;
+}
+
+// thumb ma być piłką nożną (background) fa? dodać przez css
+//kurs ux
+// zmniejszyć ikony
+// pętle w sass
