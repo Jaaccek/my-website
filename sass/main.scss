@@ -147,6 +147,51 @@ body {
 	top: -42px;
 }
 
+.gallery__row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: linear-gradient(to left, $main-color, $second-color);
+}
+
+.gallery__col {
+	flex-basis: 50%;
+	font-family: $main-font;
+}
+
+.gallery__header {
+	font-size: 80px;
+	margin-left: 50px;
+	text-shadow: 3px 2px 2px #fff;
+}
+
+.gallery__paragraph {
+	line-height: 1.7;
+	margin: 0 100px 10px 50px;
+	background-color: #780B2B;
+	border-radius: 2%;
+	color: #fff;
+	padding: 10px 10px;
+}
+
+figure {
+	text-align: center;
+}
+
+.gallery__col-photo {
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+}
+
+.gallery__photo {
+	display: flex;
+	width: 110px;
+}
+.gallery__nations {
+	height: 50px;
+}
+
 .range-slider {
 	-webkit-appearance: none;
 	// background: #000;
@@ -194,7 +239,7 @@ footer {
 	margin-bottom: 15px;
 }
 
-.footer__row{
+.footer__row {
 	width: 85%;
 	margin: auto;
 	display: flex;
