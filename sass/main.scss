@@ -160,9 +160,10 @@ body {
 }
 
 .gallery__header {
-	font-size: 80px;
+	font-size: 40px;
 	margin-left: 50px;
-	text-shadow: 3px 2px 2px #fff;
+	text-shadow: 3px 2px 2px #0E961E;
+	text-decoration: underline #780B2B;
 }
 
 .gallery__paragraph {
@@ -172,6 +173,8 @@ body {
 	border-radius: 2%;
 	color: #fff;
 	padding: 10px 10px;
+	opacity: 0.8;
+	box-shadow: 2px 3px 2px 2px #0E961E;
 }
 
 figure {
@@ -186,10 +189,23 @@ figure {
 
 .gallery__photo {
 	display: flex;
-	width: 110px;
+	width: 110px; 
 }
+
 .gallery__nations {
 	height: 50px;
+	width: 80px;
+	transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.gallery__nations:hover {
+	height: 60px;
+	width: 90px;
+}
+
+.gallery__link {
+	text-decoration: none;
+	color: #fff;
 }
 
 .range-slider {
