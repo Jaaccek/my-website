@@ -147,6 +147,33 @@ body {
 	top: -42px;
 }
 
+.article__col {
+	flex-basis: 33.3%;
+	font-family: $main-font;
+	margin: 10px 20px;
+}
+
+.article__row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: linear-gradient(to right, $fourth-color, $third-color);
+}
+
+.article__header {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.article__paragraph {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.article__link {
+	text-decoration: none;
+}
+
 .gallery__row {
 	display: flex;
 	align-items: center;
@@ -160,7 +187,7 @@ body {
 }
 
 .gallery__header {
-	font-size: 40px;
+	font-size: 40																																																																																							px;
 	margin-left: 50px;
 	text-shadow: 3px 2px 2px #0E961E;
 	text-decoration: underline #780B2B;
