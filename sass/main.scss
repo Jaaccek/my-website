@@ -480,3 +480,116 @@ form button {
 //kurs ux
 // zmniejszyć ikony
 // pętle w sass
+@media (max-width: 1366px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .article__row {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.navigation {
+		background: #0e961e;
+		position: static;
+		display: flex;
+		text-align: justify;
+		justify-content: center;
+	}
+
+	 .navigation__list {
+		display: inline-block;
+		height: 240px;
+	}
+
+	.navigation__link {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main__splash {
+		display: none;
+	}
+
+	.article__row {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.list__article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.list__article-col1 {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		margin-top: 4950px;
+	}
+
+	.list__article-col {
+		bottom: 10px;
+		z-index: 3;
+		left: 0;
+		margin-bottom: 1000px;
+	}
+	
+}
+
+@media (max-width: 500px) {
+    
+	.navigation {
+		background: #0e961e;
+		position: static;
+		display: flex;
+		text-align: justify;
+		justify-content: center;
+	}
+
+	 .navigation__list {
+		display: inline-block;
+		height: 240px;
+	}
+
+	.navigation__link {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main__splash {
+		display: none;
+	}
+
+	.article__row {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.list__article-col1 {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		margin-top: 5100px;
+	}
+
+	.list__article-col {
+		margin-left: 50px;
+		left: 40px;
+		margin-bottom: 1300px;
+	}
+
+	.gallery__col-photo {
+		display: flex;
+		flex-direction: column;
+	}
+	.gallery__photo {
+		margin: 10px;
+	}
+}
